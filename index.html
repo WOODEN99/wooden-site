@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>WOODEN | Video Editor &amp; Content Creator</title>
+<style>
+:root{
+  --bg:#faf7f2; --text:#1c1712; --muted:#6b6258; --accent:#b8672a; --card:#ffffff; --border:#e6ded2;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14110e; --text:#f3ede4; --muted:#a69b8d; --accent:#e08a4a; --card:#1e1a16; --border:#332c25;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#14110e; --text:#f3ede4; --muted:#a69b8d; --accent:#e08a4a; --card:#1e1a16; --border:#332c25;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  line-height:1.5;min-height:100vh;
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header{padding:56px 0 32px;text-align:center}
+h1{font-size:clamp(2.6rem,12vw,4.5rem);letter-spacing:.18em;font-weight:800}
+.tag{color:var(--accent);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:.9rem;margin-top:8px}
+.intro{color:var(--muted);margin-top:16px;max-width:480px;margin-inline:auto}
+section{padding:24px 0}
+h2{font-size:1.1rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px}
+.video{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#000;border:1px solid var(--border)}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.links a{
+  flex:1 1 140px;text-align:center;padding:14px 16px;border-radius:12px;
+  background:var(--card);border:1px solid var(--border);color:var(--text);
+  text-decoration:none;font-weight:600;
+}
+.links a:active,.links a:hover{border-color:var(--accent);color:var(--accent)}
+footer{padding:32px 0 40px;text-align:center;color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>WOODEN</h1>
+    <p class="tag">Video Editor &amp; Content Creator</p>
+    <p class="intro">I turn raw footage into stories people want to watch.</p>
+  </header>
+
+  <section>
+    <h2>Featured Video</h2>
+    <div class="video">
+      <iframe
+        src="https://www.youtube.com/embed/aqz-KE-bpKQ"
+        title="Featured video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <section>
+    <h2>Work With Me</h2>
+    <div class="links">
+      <a href="#" target="_blank" rel="noopener">YouTube</a>
+      <a href="#" target="_blank" rel="noopener">Instagram</a>
+      <a href="#" target="_blank" rel="noopener">TikTok</a>
+      <a href="#" target="_blank" rel="noopener">Email</a>
+    </div>
+  </section>
+
+  <footer>&copy; 2026 WOODEN</footer>
+</div>
+</body>
+</html>
